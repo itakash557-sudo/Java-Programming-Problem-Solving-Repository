@@ -5,16 +5,19 @@ class question1
     {
         System.out.println("question no:1");
         System.out.println("Take two integers and one double as input");
+        System.out.println("Add the two integers");
+        System.out.println("Multiply the result with the double");
+        System.out.println("print result");
         Scanner src=new Scanner(System.in);
         System.out.println("Enter the integer 1");
         int num1=src.nextInt();
-        System.out.println("Integer"+ num1);
         System.out.println("Enter the integer 2");
         int num2=src.nextInt();
-        System.out.println("Integer 2"+num2);
+        int add1=num1+num2;
         System.out.println("Enter the double value");
         double num3=src.nextDouble();
-        System.out.print("Double"+num3);
+        double result=add1*num3;
+        System.out.println(result);
         src.close();
     
     }
