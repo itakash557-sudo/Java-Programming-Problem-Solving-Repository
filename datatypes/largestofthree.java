@@ -9,7 +9,7 @@ import java.util.Scanner;
             int c=src.nextInt();
 
 
-            if(a>=b && a>=b)
+            if(a>=b && a>=c)
             {
                 System.out.println("A is larger"+a);
             }

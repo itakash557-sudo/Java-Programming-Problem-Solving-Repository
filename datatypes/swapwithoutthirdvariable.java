@@ -6,7 +6,7 @@ import java.util.Scanner;
     Scanner src=new Scanner(System.in);
     int a=src.nextInt();
     int b=src.nextInt();
-
+ // a=10;b=5
     a=a^b;   //or a=a+b
     b=a^b;   //or b=a-b
     a=a^b;   //or a=a-b

@@ -4,9 +4,9 @@ class datatypes{
         byte a=10;
         short b=30000;;
         int c=123456;
-        long d=123546678978875l;
+        long d=1235466789788755557l;
         float e=3.56489756f;
-        double f=1.23559797777777979;
+        double f=1.123456789123456789;
         char g='a';
         boolean h= true;
 
