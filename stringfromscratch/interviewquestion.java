@@ -37,16 +37,47 @@ class interviewquestion{
         //count vowels
 
         System.out.println("Count vowels");
-        String s2="Akash";
+        StringBuffer s2=new StringBuffer("Akaaaash");
         int countt=0;
         for(int i=0;i<=s2.length()-1;i++)
-        {
-            if(i=='a'||i=='A'||i=='e'||i=='E'||i=='i'||i=='I'||i=='o'||i=='O'||i=='u'||i=='U')
+        {   
+            char ch=s2.charAt(i);
+            if(ch=='a'||ch=='A'||ch=='e'||ch=='E'||ch=='i'||ch=='I'||ch=='o'||ch=='O'||ch=='u'||ch=='U')
             {
                 countt+=1;
+                System.out.print(ch); //print the vowels
             }
             
         }
         System.out.println(countt);
+
+
+        //palindrome String
+
+        StringBuilder palindrome=new StringBuilder("Madam");
+        StringBuilder palindromereverse=new StringBuilder(palindrome);
+        palindromereverse=palindromereverse.reverse();
+        if(palindrome.toString().equalsIgnoreCase(palindromereverse.toString())){
+            System.out.println("palindrome");
+        }
+        else
+        {
+            System.out.println("not a palindrome");
+        }
+
+
+        //count words
+
+        String countwords="i love java programming";
+        int counttt=0;
+        for (int i =0;i>=countwords.length()-1;i++)
+        {   
+            char charr=charAt(i);
+            if(charr==" ")
+            {
+                count+=1;
+            }
+        System.out.println(count);
+        }
     }
 }
