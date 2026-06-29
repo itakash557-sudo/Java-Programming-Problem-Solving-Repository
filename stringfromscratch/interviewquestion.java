@@ -69,15 +69,77 @@ class interviewquestion{
         //count words
 
         String countwords="i love java programming";
-        int counttt=0;
-        for (int i =0;i>=countwords.length()-1;i++)
+        System.out.println("without methods");
+        int counttt=1;
+        for (int i =0;i<=countwords.length()-1;i++)
         {   
-            char charr=charAt(i);
-            if(charr==" ")
+            char charr=countwords.charAt(i);
+            if(charr==' ')
             {
-                count+=1;
+                counttt+=1;
+
             }
-        System.out.println(count);
+        }
+        System.out.println(counttt);
+        System.out.println("with methods");
+
+        System.out.println("using split method");
+        String strr = "i love java programming";
+        String[] splitWords = strr.split(" ");
+        System.out.println(splitWords.length);
+
+        System.out.println("using trim and split method");
+        String[] trimmedWords = strr.trim().split("\\s+");
+        System.out.println(trimmedWords.length);
+
+        //Remove Spaces
+
+        System.out.println("Remove Spaces");
+        String rs="i love java";
+        rs=rs.replace(" ","");
+        System.out.println(rs);
+
+        //convert upper to lower and lower to upper
+
+        System.out.println("Convert upper to lower and lower to upper");
+        String caase="Akash Programmer";
+        caase=caase.toUpperCase();
+        System.out.println(caase);
+        caase=caase.toLowerCase();
+        System.out.println(caase);
+
+        //count Specific character
+
+        System.out.println("count Specific character");
+        String a="program and programming";
+        char c='m';
+        int cou=0;
+        for (int i=0;i<=a.length()-1;i++)
+        {
+            char d=a.charAt(i);
+            if (d==c)
+            {
+                cou+=1;
+            }
+
+        }
+        System.out.println(cou);
+
+        // Check String Contains Word
+        System.out.println(a.contains("and"));
+        //First character
+        System.out.println(a.charAt(0));
+        //last character
+        int num=a.length()-1;
+        System.out.println(a.charAt(num));
+        //reverse a each word
+        String sti="akash programmer and developer";
+        String[] s=sti.split(" ");
+        for(String wo:s)
+        {
+            StringBuffer sb1=new StringBuffer(wo);
+            sb1=sb1.reverse();
+            System.out.print(sb1+" ");
         }
     }
 }
