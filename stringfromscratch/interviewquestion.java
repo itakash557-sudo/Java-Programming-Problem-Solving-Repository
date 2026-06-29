@@ -143,3 +143,24 @@ class interviewquestion{
         }
     }
 }
+
+
+
+
+
+// Most Asked MNC Programs
+
+    // Top Priority
+// Reverse String
+// Palindrome
+// Count Vowels
+// Count Characters
+// Remove Spaces
+// Contains
+// equals()
+    // Medium Priority
+// Reverse Each Word
+// Count Words
+// Frequency of Characters
+// Duplicate Characters
+// Anagram
