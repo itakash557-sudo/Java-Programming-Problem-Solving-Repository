@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class advanced_string
 {
     public static void main(String[]args)
@@ -46,6 +47,24 @@ class advanced_string
             }
                 System.out.println(lettercount);
                 System.out.println(count);
+
+                //Anagram
+
+                System.out.println("Anagram program");
+                String anagramm="listenn";
+                String anagrammm="silent";
+                char[] ch1=anagramm.toCharArray();
+                char[] ch2=anagrammm.toCharArray();
+                Arrays.sort(ch1);
+                Arrays.sort(ch2);
+                System.out.println(Arrays.toString(ch1));
+                System.out.println(Arrays.toString(ch2));
+                if(Arrays.equals(ch1,ch2)){
+                    System.out.println("Anagram");
+                }
+                else{
+                    System.out.println("not an Anagram");
+                }
             
          }
     }
